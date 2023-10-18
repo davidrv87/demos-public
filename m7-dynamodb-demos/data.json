@@ -1,0 +1,67 @@
+{
+  "m7-demo-table": [
+    {
+      "PutRequest": {
+        "Item": {
+          "title": {
+            "S": "The Big New Movie"
+          },
+          "year": {
+            "N": "2015"
+          },
+          "plot": {
+            "S": "Nothing happens at all."
+          },
+          "genre": {
+            "S": "Comedy"
+          },
+          "running_time": {
+            "N": "120"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "title": {
+            "S": "Amazing film"
+          },
+          "year": {
+            "N": "2015"
+          },
+          "plot": {
+            "S": "The plot is the best."
+          },
+          "genre": {
+            "S": "Horror"
+          },
+          "running_time": {
+            "N": "110"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "title": {
+            "S": "The Big New Movie 2"
+          },
+          "year": {
+            "N": "2017"
+          },
+          "plot": {
+            "S": "This is the second part of the movie"
+          },
+          "genre": {
+            "S": "Comedy"
+          },
+          "running_time": {
+            "N": "157"
+          }
+        }
+      }
+    }
+  ]
+}

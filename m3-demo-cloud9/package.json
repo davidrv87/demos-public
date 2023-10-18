@@ -1,0 +1,23 @@
+{
+  "name": "demo-cloud9",
+  "version": "1.0.0",
+  "description": "Demo Cloud9 for Developing on AWS course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidrv87/demo-cloud9.git"
+  },
+  "author": "David Rubio Vidal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidrv87/demo-cloud9/issues"
+  },
+  "homepage": "https://github.com/davidrv87/demo-cloud9#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.282.0",
+    "@aws-sdk/client-sns": "^3.282.0"
+  }
+}

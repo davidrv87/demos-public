@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  dynamodb-local-m7-demo:
+    image: amazon/dynamodb-local:1.21.0
+    container_name: dynamodb-local-m7-demo
+    command: -jar DynamoDBLocal.jar -sharedDb -dbPath ./
+    ports:
+      - "9999:8000"
+    volumes:
+      - dynamodb_data_m7_demo:/home/dynamodblocal/data
+
+volumes:
+  dynamodb_data_m7_demo:

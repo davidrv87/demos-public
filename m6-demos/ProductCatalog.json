@@ -1,0 +1,29 @@
+{
+  "Products":
+  [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": "2000.00",
+      "description": "This is the best laptop you will ever have"
+    },
+    {
+      "id": 2,
+      "name": "Mouse",
+      "price": "59.99",
+      "description": "A mouse for all surfaces"
+    },
+    {
+      "id": 3,
+      "name": "Keyboard",
+      "price": "138.95",
+      "description": "A great mechanical keyboard"
+    },
+    {
+      "id": 4,
+      "name": "Monitor",
+      "price": "599.99",
+      "description": "A 27 inch curved monitor"
+    }
+  ]
+}

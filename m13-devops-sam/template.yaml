@@ -1,0 +1,37 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  m13-devops-sam
+
+  Sample SAM Template for m13-devops-sam
+
+Globals:
+  Function:
+    Timeout: 10
+
+Resources:
+  GetWeatherFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: get-weather/
+      Handler: app.lambdaHandler
+      Runtime: nodejs18.x
+      Architectures:
+        - x86_64
+      Events:
+        GetWeather:
+          Type: Api
+          Properties:
+            Path: /weather
+            Method: get
+
+Outputs:
+  GetWeatherApi:
+    Description: "API Gateway endpoint URL for Prod stage for Get Weather function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/weather"
+  GetWeatherFunction:
+    Description: "Get Weather Lambda Function ARN"
+    Value: !GetAtt GetWeatherFunction.Arn
+  GetWeatherFunctionIamRole:
+    Description: "Implicit IAM Role created for Get Weather function"
+    Value: !GetAtt GetWeatherFunctionRole.Arn
